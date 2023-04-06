@@ -1,0 +1,6 @@
+{
+  "driver": "http-session",
+  "origin": "http://luminaintranet.tech",
+  "session": "../sessions/atelier-paris.zip",
+  "archiveFormat": "zip-aes256"
+}
