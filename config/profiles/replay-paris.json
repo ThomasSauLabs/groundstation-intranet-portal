@@ -1,0 +1,6 @@
+{
+  "driver": "http-session",
+  "origin": "http://luminaintranet.tech",
+  "identity": "tsauriny",
+  "session": "../sessions/atelier-paris.json"
+}

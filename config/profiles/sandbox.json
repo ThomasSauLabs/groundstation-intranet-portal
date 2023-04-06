@@ -1,0 +1,4 @@
+{
+  "driver": "browser-fixtures",
+  "fixtures": "../../web/fixtures/users.js"
+}
