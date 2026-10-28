@@ -6,7 +6,7 @@ function sessionBytes(value) {
 
 async function openLocalSession(profile, password) {
   const encoder = new TextEncoder();
-  const material = encoder.encode(profile.identity + '\0' + password);
+  const material = encoder.encode(profile.id + '\0' + password);
   const baseKey = await crypto.subtle.importKey('raw', material, 'PBKDF2', false, ['deriveKey']);
   const key = await crypto.subtle.deriveKey(
     {name: 'PBKDF2', salt: sessionBytes(profile.session.salt), iterations: profile.session.iterations, hash: 'SHA-256'},
@@ -35,6 +35,10 @@ document.getElementById('session').addEventListener('submit', async function (ev
   });
   if (!profile) {
     result.textContent = 'Profil de présentation inconnu.';
+    return;
+  }
+  if (!globalThis.crypto || !globalThis.crypto.subtle) {
+    result.textContent = 'Ouvrez cette page depuis le fichier HTML local, localhost ou une adresse HTTPS.';
     return;
   }
   sessionPending = true;
