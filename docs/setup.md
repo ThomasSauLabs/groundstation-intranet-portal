@@ -1,8 +1,4 @@
-# Poste de développement
-
-Prérequis : Docker et curl.
-
-Le service local répond avec une page de test ; il ne sert pas de portail interne.
-Utiliser `scripts/healthcheck.sh` pour vérifier sa disponibilité.
-
-Pour une présentation de l'interface seule, ouvrir `web/index.html` dans un navigateur.
+# Comment ça marche ?
+1 - Télécharger groundstation-intranet-portal-sedna.zip sur Windows groundstation-intranet-portal-sedna.tar.gz sur Linux  
+2 - Ouvrer `web/index.html`  
+3 - Renseigner les informations de connexion

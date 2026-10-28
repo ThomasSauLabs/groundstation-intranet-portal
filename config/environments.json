@@ -1,0 +1,11 @@
+{
+  "default": "development",
+  "environments": {
+    "development": {
+      "profile": "profiles/sandbox.json"
+    },
+    "recette": {
+      "profile": "profiles/replay-paris.json"
+    }
+  }
+}

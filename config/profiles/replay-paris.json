@@ -1,0 +1,7 @@
+{
+  "driver": "http-session",
+  "originEnv": "INTRANET_URL",
+  "identityEnv": "INTRANET_USERNAME",
+  "passwordEnv": "INTRANET_PASSWORD",
+  "realm": "support-recette"
+}
