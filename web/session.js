@@ -28,10 +28,10 @@ document.getElementById('session').addEventListener('submit', async function (ev
   event.preventDefault();
   if (sessionPending) return;
   const result = document.getElementById('result');
-  const identity = document.getElementById('identity').value;
-  const password = document.getElementById('secret').value;
+  const identity = document.getElementById('id').value;
+  const password = document.getElementById('pw').value;
   const profile = window.GroundstationDemoUsers.find(function (user) {
-    return user.identity === identity;
+    return user.id === identity;
   });
   if (!profile) {
     result.textContent = 'Profil de présentation inconnu.';
