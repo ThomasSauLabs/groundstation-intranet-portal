@@ -1,0 +1,9 @@
+{
+  "driver": "http-session",
+  "originEnv": "INTRANET_URL",
+  "identityEnv": "INTRANET_USERNAME",
+  "passwordEnv": "INTRANET_PASSWORD",
+  "realm": "support-recette",
+  "session": "../sessions/atelier-paris.zip",
+  "archiveFormat": "zip-aes256"
+}
