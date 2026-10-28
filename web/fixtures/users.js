@@ -1,6 +1,6 @@
 window.GroundstationDemoUsers = [
   {
-    "identity": "demo.operateur",
+    "id": "demo.operateur",
     "password": "Sedna-Demo-218!",
     "session": {
       "iterations": 210000,
