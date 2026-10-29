@@ -1,8 +1,8 @@
-# Poste de développement
+# Utilisation locale
 
-Prérequis : Docker et curl.
+1. Télécharger et extraire l'archive de la version souhaitée.
+2. Ouvrir `web/index.html` dans un navigateur récent.
+3. Renseigner les informations de connexion du profil à examiner.
 
-Le service local répond avec une page de test ; il ne sert pas de portail interne.
-Utiliser `scripts/healthcheck.sh` pour vérifier sa disponibilité.
-
-Pour une présentation de l'interface seule, ouvrir `web/index.html` dans un navigateur.
+Les fichiers de configuration de cette version se trouvent dans `config/`.
+Les profils de présentation sont chargés depuis les fixtures de `web/`.
