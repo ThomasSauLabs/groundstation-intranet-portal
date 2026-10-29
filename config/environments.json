@@ -1,0 +1,8 @@
+{
+  "default": "development",
+  "environments": {
+    "development": {
+      "profile": "profiles/sandbox.json"
+    }
+  }
+}
